@@ -15,7 +15,7 @@ class MyClass {
     this.myIntProperty = 4321;
   }
   
-  aMethodOnClass(String myStringArgument) {
+  public void aMethodOnClass(String myStringArgument) {
     this.myStringProperty = myStringArgument;
   }
   
