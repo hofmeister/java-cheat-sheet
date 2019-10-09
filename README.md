@@ -88,7 +88,7 @@ Purpose: Iterate through a list to be able to access and perform something on ea
 
 ```java
 //Create array list with values
-ArrayList<String> myArrayList = new myArrayList<String>();
+ArrayList<String> myArrayList = new ArrayList<String>();
 myArrayList.add("First value");
 myArrayList.add("Second value");
 
@@ -132,7 +132,7 @@ for (String eachItemInArray : myArray) {
 Syntax: 
 
 ```java
-for (<valuetype> <entryVariableName> : <listVariableName>) {
+for (<valuetype> <entryVariableName> : <arrayVariableName>) {
   <action for every entry>
 }
 
