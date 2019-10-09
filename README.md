@@ -17,6 +17,7 @@ class MyClass {
   //The constructor is called once when you create new instances. This is where you can do initialisation 
   //of properties. The constructor can take any arguments - like any other method.
   //You can not call the constructor after construction.
+  // - The constructor is called when you do "new MyClass();"
   public MyClass() {
     this.myStringProperty = "a string value";
     this.myIntegerProperty = 1234;
@@ -47,7 +48,8 @@ public class AnyNameYouWant {
   //This static method is "special" and any class that contains this exact method is considered a "program" that
   //can be executed.
   public static void main(String[] args) {
-      //Initialise class - creating what is called "an instance of the class"
+      //Initialise class - creating what is called "an instance of the class". This first calls the contstructor of
+      //MyClass which then returns the instance (the "new" operator is what causes this)
       MyClass myInstance = new MyClass();
       
       //Call method on the instance - giving it the argument "test"
