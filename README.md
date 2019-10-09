@@ -143,7 +143,7 @@ Purpose: Count something from A to B and perform some action for each iteration
 
 ```java
 //Create array list with values
-ArrayList<String> myArrayList = new myArrayList<String>();
+ArrayList<String> myArrayList = new ArrayList<String>();
 myArrayList.add("First value");
 myArrayList.add("Second value")
 
@@ -173,7 +173,7 @@ Purpose: Convert an array list into an array
 
 ```java
 //Create array list with values
-ArrayList<String> myArrayList = new myArrayList<String>();
+ArrayList<String> myArrayList = new ArrayList<String>();
 myArrayList.add("First value");
 myArrayList.add("Second value");
 
