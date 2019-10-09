@@ -145,7 +145,7 @@ Purpose: Count something from A to B and perform some action for each iteration
 //Create array list with values
 ArrayList<String> myArrayList = new ArrayList<String>();
 myArrayList.add("First value");
-myArrayList.add("Second value")
+myArrayList.add("Second value");
 
 //Count from 0 to myArrayList.size() (in this case it's 2)
 for (int index = 0; index < myArrayList.size(); index++) {
