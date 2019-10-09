@@ -14,8 +14,9 @@ class MyClass {
   
   private Integer myIntegerProperty; //Is null unless assigned a value
   
-  //The constructor is called once when you create new instances. This is where you can do initialisation 
-  //of properties. The constructor can take any arguments - like any other method.
+  //The constructor is called once when you create new instances. This is where you can do 
+  //initialisation of properties. The constructor can take any arguments - like any other 
+  //method.
   //You can not call the constructor after construction.
   // - The constructor is called when you do "new MyClass();"
   public MyClass() {
@@ -25,10 +26,12 @@ class MyClass {
   }
   
   //A method usually performs some action on the class properties. 
-  // - Changes the internal state of the class (which means it changes the values of one or more properties on the class)
-  // - Returns the current state of the class (which means it returns on or more values of the properties in the class)
-  // - Performs calculations or transformations - which means it takes the internal state and converts it to something else
-  //   like a sum total or converts an ArrayList to an array
+  // - Changes the internal state of the class (which means it changes the values of one 
+  //   or more properties on the class)
+  // - Returns the current state of the class (which means it returns on or more values 
+  //   of the properties in the class)
+  // - Performs calculations or transformations - which means it takes the internal state and 
+  //   converts it to something else like a sum total or converts an ArrayList to an array
   public void aMethodOnClass(String myStringArgument) {
     this.myStringProperty = myStringArgument;
   }
@@ -45,11 +48,12 @@ Purpose: Start a java program
 //Define the class and give it a name. Name can be anything - in this case "AnyNameYouWant"
 public class AnyNameYouWant {
 
-  //This static method is "special" and any class that contains this exact method is considered a "program" that
-  //can be executed.
+  //This static method is "special" and any class that contains this exact method is considered 
+  //a "program" that can be executed.
   public static void main(String[] args) {
-      //Initialise class - creating what is called "an instance of the class". This first calls the contstructor of
-      //MyClass which then returns the instance (the "new" operator is what causes this)
+      //Initialise class - creating what is called "an instance of the class". This first calls
+      //the contstructor of MyClass which then returns the instance (the "new" operator is what 
+      //causes this)
       MyClass myInstance = new MyClass();
       
       //Call method on the instance - giving it the argument "test"
