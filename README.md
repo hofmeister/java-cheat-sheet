@@ -192,7 +192,48 @@ for (int index = 0; index < myArrayList.size(); index++) {
   myArray[index] = myArrayList.get(index);
 }
 
+```
 
+
+# Example: Calculate a sum from a list
+Purpose: Calculate the total sum of a value / property from each item in an array list
+
+```java
+//Create array list with values
+ArrayList<MyClass> myArrayList = new ArrayList<MyClass>();
+myArrayList.add(new MyClass("First value"));
+myArrayList.add(new MyClass("Second value"));
+
+//Initialse the variable outside the loop with an initial value of 0
+double myTotalSum = 0;
+
+for (MyClass eachItemInArrayList : myArrayList) {
+  //For every item increment the sum with the value from the item
+  myTotalSum = myTotalSum + eachItemInArrayList.getNumberFromItem();
+}
+
+```
+
+# Example: Perform operation on each item in a list
+Purpose: Perform calculation on each individual item in a list
+
+```java
+//Create array list with values
+ArrayList<MyClass> myArrayList = new ArrayList<MyClass>();
+myArrayList.add(new MyClass("First value"));
+myArrayList.add(new MyClass("Second value"));
+
+
+for (MyClass eachItemInArrayList : myArrayList) {
+  //When we need to do something for every item in a list we do all of it within the loop
+  //E.g. no variables outside the loop is used when the calculation is isolated to each item (not a sum or count)
+
+  //Calculate the value using a value from each item and the math that's needed - e.g. triple the value
+  double numberMultpliedByThree = eachItemInArrayList.getNumberFromItem() * 3;
+  
+  //Update the number property on the item
+  eachItemInArrayList.updateNumberOnItem(numberMultpliedByThree);
+}
 
 ```
 
